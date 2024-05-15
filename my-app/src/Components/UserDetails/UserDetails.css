@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+.get_user_input{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.get_user_input .user_detailed_form{
+    display: flex;
+    gap: 10px;
+}
+.user_detailed_form input{
+    padding: 10px;
+}
+.user_detailed_form button{
+    width: 10rem;
+    padding: 10px;
+    background: #00418f;
+    color: white;
+}
+.u_userdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: #0000003b;
+    font-family: "Poppins", sans-serif;
+}
+.u_userdetails_page{
+    width: 8.5in;
+    min-height: 11in;
+    background: white;
+    margin: 32px 0 32px 0;
+    padding: 16px;
+}
+.u_page_border{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 16px;
+    overflow: hidden;
+}
+h3{
+    font-size: 16px;
+}
+.u_container_heading{
+    font-size: 22px;
+}
+.u_field{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+    overflow: hidden;
+}
+.u_f_h{
+    font-weight: 200;
+    font-weight: bold;
+}
+.u_i_f{
+    border: none;
+    outline: none;
+}
+.u_container_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+    width: 100%;
+    padding-top: 10px;
+}
+.u_form_details_container input{
+    /* max-width: 100px; */
+}
+.u_form_details_grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 48% 48%;
+    justify-content: center;
+}
+/* COMPANY  */
+.u_company_info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+
+}
+.u_company_logo img{
+    width: 170px;
+}
+.u_company_goal{
+    width: 80%;
+    text-align: center;
+}
+.u_form_type{
+    font-size: 22px;
+}
+
+/* FORM CONSTANT  */
+.u_form_constant{
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+.u_form_constant span{
+    display: flex;
+    align-items: flex-start;
+}
+.u_form_constant span h3{
+    font-size: 16px;
+}
+.u_form_constant span input{
+    color: #cd0301;
+    border: none;
+    position: relative;
+    bottom: 2px;
+}
+.form_date input{
+    width: 30px;
+}
+.u_user_img img{
+    width: 30mm;
+    height: 40mm;
+}
+.u_user_img{
+    position: absolute;
+    right: 0;
+    top: -65px;
+    border: 2px solid #00418f;
+}
+
+/* PERSONAL DETAILS  */
+.personal_details{
+    border-top: none;
+}
+.u_adress_field{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.u_home_conatiners{
+    display: flex;
+    justify-content: space-between;
+}
+
+.u_adress_container{
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* width: 48%; */
+    overflow: hidden;
+}
+.u_adress_container p{
+    font-weight: bolder;
+}
+.u_adress_container label{
+    font-weight: bold;
+}
+.u_inner_data_container_adress{
+    display: flex;
+}
+.u_field_adress h3{
+    font-size: 18px;
+}
+
+/* LANGUAGES  */
+.u_field_question{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.u_checkbox_inner_containers{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.u_checkbox_inner_container{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+.u_checkbox_inner_container input{
+    width: 15px;
+}
+textarea{
+    border: none;
+    resize: none;
+}
+
+/* questions about yourself  */
+.u_question_checkbox{
+    display: flex;
+    gap: 20px;
+}
+.u_question_checkbox .u_inner_data_container{
+    gap: 5px;
+    display: flex;
+}
+.answerYes{
+    font-weight: bold;
+}
+
+/* acccommodation  */
+.accommodation_criteria{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.accommodation_criteria .u_inner_data_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+}
+.accommodation_criteria label{
+    font-weight: bold;
+}

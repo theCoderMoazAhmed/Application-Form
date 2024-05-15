@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    background: #00428f;
+}
+.navbar a{
+    color: white;
+    margin: 1rem 3rem 1rem 3rem;
+}
