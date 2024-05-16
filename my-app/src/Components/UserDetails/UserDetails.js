@@ -709,20 +709,22 @@ const UserDetails = () => {
                             className="u_f_v u_i_f"
                             checked={
                               userData &&
-                              userData.companyAccommodation === "Yes"
+                              userData.companyAccommodation
+                              === "Yes"
                             }
                             // Check if userData exists and if companyAccommodation is "Yes"
                           />
                         </div>
                         <div className="u_inner_data_container">
-                          <label htmlFor="companyAccommodationNO">No</label>
+                          <label htmlFor="companyAccommodation">No</label>
                           <input
                             name="companyAccommodation"
-                            id="companyAccommodationNO"
+                            id="companyAccommodation"
                             type="checkbox"
                             className="u_f_v u_i_f"
                             checked={
-                              userData && userData.companyAccommodation === "No"
+                              userData && userData.companyAccommodation
+                              === "No"
                             }
                             // Check if userData exists and if companyAccommodation is "No"
                           />

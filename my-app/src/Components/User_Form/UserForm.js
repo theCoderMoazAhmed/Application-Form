@@ -521,7 +521,7 @@ const UserForm = () => {
                           First Name <span>*</span>
                         </label>
                       </div>
-                      <div class={`${"group gap-2 col-lg-6"} ${"name"}`}>
+                      <div class={`${"group  gap-2 col-lg-6"} ${"name"}`}>
                         <input
                           type="text"
                           name="familyName"
@@ -537,7 +537,7 @@ const UserForm = () => {
                         </label>
                       </div>
 
-                      <div class={`${"group gap-2 col-lg-6"} ${"name"}`}>
+                      <div class={`${"group gap-2 col-lg-12"} ${"email"}`}>
                         <input
                           type="text"
                           name="
@@ -553,7 +553,7 @@ const UserForm = () => {
                           Email<span>*</span>
                         </label>
                       </div>
-                      <div class={`${"group gap-2 col-lg-6"} ${"name"}`}>
+                      <div class={`${"group gap-2 col-lg-12"} ${"phone"}`}>
                         <input
                           type="text"
                           name="
@@ -569,7 +569,7 @@ const UserForm = () => {
                           Phone Number <span>*</span>
                         </label>
                       </div>
-                      <div class={`${"group gap-2 col-lg-6"} ${"name"}`}>
+                      <div class={`${"group gap-2 col-lg-12"} ${"mobile"}`}>
                         <input
                           type="text"
                           name="personalMobile"
@@ -584,7 +584,7 @@ const UserForm = () => {
                           Personal Mobile<span>*</span>
                         </label>
                       </div>
-                      <div class={`${"group gap-2 col-lg-6"} ${"name"}`}>
+                      <div class={`${"group gap-2 col-lg-12"} ${"cnic"}`}>
                         <input
                           type="text"
                           name="personalCnic"
@@ -630,19 +630,21 @@ const UserForm = () => {
                     </div>
                   </div>
 
-                  {/* <div class={`${"group gap-2 col-lg-6"} ${"address"}`}>
+                  <div class={`${"group gap-2 col-lg-6"} ${"address"}`}>
                     <input
                       type="text"
                       name="address"
                       className="w-100 f_input"
                       required="required"
+                      value={homeAddress.address}
+                      onChange={handleHomeAddressChange}
                     />
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label className="f_label">
                       Address <span>*</span>
                     </label>
-                  </div> */}
+                  </div>
                   <div class={`${"group gap-2 col-lg-6"} ${"gender"}`}>
                     <select
                       name="gender"
@@ -659,7 +661,7 @@ const UserForm = () => {
                       <option value="Other">Other</option>
                     </select>
                   </div>
-                  <div class={`${"group gap-2 col-lg-6"} ${"name"}`}>
+                  <div class={`${"group gap-2 col-lg-6"} ${"ocupation"}`}>
                     <input
                       type="text"
                       name="presentOccupation"
@@ -674,7 +676,7 @@ const UserForm = () => {
                       Present Occupation<span>*</span>
                     </label>
                   </div>
-                  <div class={`${"group gap-2 col-lg-6"} ${"name"}`}>
+                  <div class={`${"group gap-2 col-lg-3"} ${"passport"}`}>
                     <input
                       type="text"
                       name="
@@ -690,7 +692,7 @@ const UserForm = () => {
                       Passport Number<span>*</span>
                     </label>
                   </div>
-                  <div class={`${"group gap-2 col-lg-2"} ${"dob"}`}>
+                  <div class={`${"group gap-2 col-lg-3"} ${"passport"}`}>
                     <input
                       type="date"
                       name="passportExpiry"
@@ -704,7 +706,7 @@ const UserForm = () => {
                       Passport Expiry<span>*</span>
                     </label>
                   </div>
-                  <div class={`${"group gap-2 col-lg-6"} ${"name"}`}>
+                  <div class={`${"group gap-2 col-lg-3"} ${"passport"}`}>
                     <input
                       type="text"
                       name="citizenshipCountry"
