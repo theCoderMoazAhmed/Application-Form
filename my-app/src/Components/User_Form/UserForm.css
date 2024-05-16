@@ -2,170 +2,205 @@
 
 /* // VARIABLES // ============================== // */
 :root{
-    --bg-color: #424242;
-    --hl-color: #2196F3;
-    --muted-color: mix(white, $bg-color, 70%);
-    --trans-time: 300ms;
-    --width: 320px;
+  --bg-color: #424242;
+  --hl-color: #2196F3;
+  --muted-color: mix(white, $bg-color, 70%);
+  --trans-time: 300ms;
+  --width: 320px;
+
+}
+.apply h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.country{
+  display: flex;
+}
+.Asia{
+  cursor: pointer;
+  padding: 10px;
+  background-color:rgb(176, 176, 176);
+  border-top-left-radius:8px ;
+  border-bottom-left-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.othercoun{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 1px;
+  background-color:rgb(176, 176, 176);
+  /* background-color:#2196F3; */
+  color: white;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius:8px ;
+}
+.active{
+  background-color: rgb(115, 115, 115);
+  border-bottom: 4px solid #00428f;
+}
+.othercoun:hover,.Asia:hover{
+  background-color: rgb(115, 115, 115);
+  /* background-color:#237fcb; */
   
+}
+.wraper{
+  border: 1px solid rgba(186, 186, 186, 0.721);
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.image-box{
+  border: 1px solid black;
+  width: 15rem;
+  height: 230px;
+  object-fit: cover;
+}
+.imggroup{
+  /* margin-left: 3rem; */
+  position: relative;
+  display: grid;
+}
+.group
+{
+  position: relative;
+  display: grid;
+}
+.group input:focus{
+  transition: all 0.5s ease;
+  border-bottom: 1px solid rgb(56, 142, 213);
+}
+.w-100.f_input {
+  padding-left: 13px;
+  margin-top: 3px;
+  height:2.5rem;
+}
+.group input::placeholder{
+  color: black;
+  font-size: 15px;
+}
+
+.gender select,
+.visatype select,
+.englishtst select,
+.campusSel select,
+.nationality select,
+.studylevl select,
+.applyingMethod select,
+.studytime select,
+.campusname select,
+.englislvl select, 
+.Howufindus select,
+.accommodation select,
+.Accommodationsate select,
+.Accommodationstudy select,
+.Accommodationstudy select,
+.usmoke select,
+.questions select,
+.medical select{
+  padding: 12px;
+  border: none;
+  background-color: rgba(176, 176, 176, 0.217);
+  height: 45px
+}
+.homeaddreheading{
+  font-size: 16px;
+  padding: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: #575757;
+}
+.btnn{
+  border: none;
+  border-radius: 6px;
+  background: #004290;;
+  color:white;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.btnn:hover{
+  background-color: #0c6add;
+  transition: all 0.1s ease;
+}
+.f_input,
+.f_textarea {
+  background: rgba(176, 176, 176, 0.217);
+  color: var(--muted-color);
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: var(--width);
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--muted-color);
+  &:focus {
+    outline: none;
   }
-  .apply h1{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
+  &:focus ~ .f_label,
+  &:valid ~ .f_label {
+    top: -16px;
+    font-size: 13px;
+    color :#575757;
+    left: 15px;
+    ;
   }
-  .country{
-    display: flex;
+  &:focus ~ .bar:before {
+    width: 200%;
   }
-  .Asia{
-    cursor: pointer;
-    padding: 10px;
-    background-color:rgb(176, 176, 176);
-    border-top-left-radius:8px ;
-    border-bottom-left-radius: 8px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
+}
+
+.f_label {
+  color: var(--muted-color);
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 25px;
+  top: 10px;
+  transition: var(--trans-time) ease all;
+}
+.checkboxes_form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.checkboxes_form_field{
+  background: rgba(176, 176, 176, 0.217);
+  width: var(--width);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* .bar {
+  position: relative;
+  display: block;
+  width: var(--width);
+  &:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: var(--hl-color);
+    transition: var(--trans-time) ease all;
+    left: 0%;
   }
-  .othercoun{
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    cursor: pointer;
-    margin-left: 1px;
-    background-color:rgb(176, 176, 176);
-    /* background-color:#2196F3; */
-    color: white;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius:8px ;
-  }
-  .active{
-    background-color: rgb(115, 115, 115);
-    border-bottom: 4px solid firebrick;
-  }
-  .othercoun:hover,.Asia:hover{
-    background-color: rgb(115, 115, 115);
-    /* background-color:#237fcb; */
-    
-  }
-  .wraper{
-    border: 1px solid rgba(186, 186, 186, 0.721);
-    width: 100%;
-    height: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
+} */
+
+@media (max-width:1200px){
   .image-box{
     border: 1px solid black;
-    width: 18rem;
-    height: 250px;
+    width: 13rem;
+    height: 230px;
     object-fit: cover;
   }
-  .group
-  {
-    position: relative;
-    display: grid;
-  }
-  .group .b_input:focus{
-    transition: all 0.5s ease;
-    border-bottom: 1px solid rgb(213, 56, 56);
-  }
-  .gender select,
-  .visatype select,
-  .englishtst select,
-  .campusSel select,
-  .nationality select,
-  .studylevl select,
-  .applyingMethod select,
-  .studytime select,
-  .campusname select,
-  .englislvl select, 
-  .Howufindus select,
-  .accommodation select,
-  .Accommodationsate select,
-  .Accommodationstudy select,
-  .Accommodationstudy select,
-  .usmoke select,
-  .questions select,
-  .medical select{
-    padding: 12px;
-    border: none;
-    background-color: rgba(176, 176, 176, 0.217);
-    height: 45px
-  }
-  .homeaddreheading{
-    font-size: 16px;
-    padding: 13px;
-    font-weight: bold;
-    text-align: center;
-    color: #575757;
-  }
-  .btnn{
-    border: none;
-    border-radius: 6px;
-    background: #004290;;
-    color:white;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 20px;
-    font-weight: 600;
-  }
-  .btnn:hover{
-    background-color: #0c6add;
-    transition: all 0.1s ease;
-  }
-  .b_input{
-    background: rgba(176, 176, 176, 0.217);
-    color: var(--muted-color);
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: var(--width);
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid var(--muted-color);
-    &:focus {
-      outline: none;
-    }
-    &:focus ~ .b_label,
-    &:valid ~ .b_label {
-      top: -16px;
-      font-size: 13px;
-      color :#575757;
-      left: 15px;
-      ;
-    }
-    &:focus ~ .bar:before {
-      width: 200%;
-    }
-  }
-  
-  .b_label {
-    color: var(--muted-color);
-    font-size: 16px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 25px;
-    top: 10px;
-    transition: var(--trans-time) ease all;
-  }
-  
-  /* .bar {
-    position: relative;
-    display: block;
-    width: var(--width);
-    &:before {
-      content: '';
-      height: 2px;
-      width: 0;
-      bottom: 0px;
-      position: absolute;
-      background: var(--hl-color);
-      transition: var(--trans-time) ease all;
-      left: 0%;
-    }
-  } */
-  
-  
+}

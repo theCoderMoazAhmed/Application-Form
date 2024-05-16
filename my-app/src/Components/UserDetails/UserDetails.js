@@ -51,6 +51,7 @@ const UserDetails = () => {
           />
         </div>
         <button type="submit">Get User</button>
+        <button className="download_document"><div>{generatePdf()}</div></button>
       </form>
       </div>
 
@@ -401,17 +402,6 @@ const UserDetails = () => {
                         value={userData ? userData.englishLevel : ""}
                       />
                     </div>
-                    <div className="u_field u_field_question">
-                      <label className="u_f_h">
-                        Highest&nbsp;Qualification&nbsp;Level&nbsp;:&nbsp;
-                      </label>
-                      <input
-                        name="highestQualification"
-                        type="text"
-                        className="u_f_v u_i_f "
-                        value={userData ? userData.qualificationLevel : ""}
-                      />
-                    </div>
                     <div className="u_field u_field_question u_checkbox">
                       <label className="u_f_h">
                         Have you sat any English test&nbsp;?&nbsp;
@@ -436,6 +426,22 @@ const UserDetails = () => {
                           </div>
                         ))}
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="u_container_content study">
+                  <h2 className="u_container_heading">Study</h2>
+                  <div className="u_data_container language_container u_form_details_grid">
+                    <div className="u_field u_field_question">
+                      <label className="u_f_h">
+                        Highest&nbsp;Qualification&nbsp;Level&nbsp;:&nbsp;
+                      </label>
+                      <input
+                        name="highestQualification"
+                        type="text"
+                        className="u_f_v u_i_f "
+                        value={userData ? userData.qualificationLevel : ""}
+                      />
                     </div>
 
                     <div className="u_field u_field_question">
@@ -1155,7 +1161,6 @@ const UserDetails = () => {
           </div>
         )}
       </div>
-      <div>{generatePdf()}</div>
     </>
   );
 };

@@ -63,7 +63,7 @@ const EnglishLevelEnum = [
 ];
 
 // Enum for passed English tests
-const EnglishTestsEnum = ["PTE", "FCE", "CAE", "TOEIC", "IELTS", "NOPE"];
+const EnglishTestsEnum = ["PTE", "FCE", "CAE", "TOEIC", "IELTS", "NONE"];
 
 // Enum for study time
 const StudyTimeEnum = ["Full-Time", "Part-Time-Morning", "Part-Time-Evening"];
@@ -198,8 +198,11 @@ const User = mongoose.model("User", {
 
 //   ACCOMMODATION
   companyAccommodation: {
-      type: String,
-      enum: CompanyAccommodationEnum
+      answer: {
+        type: String,
+        enum: CompanyAccommodationEnum
+    },
+    AccommodationDetails: String
   },
   accommodationStartDate: Date,
   accommodationEndDate: Date,

@@ -224,3 +224,16 @@ textarea{
 .accommodation_criteria label{
     font-weight: bold;
 }
+.download_document{
+    width: 10rem;
+    padding: 10px;
+    background: #00418f;
+    color: white;
+}
+.download_document a{
+    text-decoration: none;
+    color: white;
+}
+.image-box img{
+    width: 100%;
+}
